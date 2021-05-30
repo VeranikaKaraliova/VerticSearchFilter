@@ -1,0 +1,39 @@
+<!-- <template>
+  <lightning-card title="HelloWorld" icon-name="custom:custom14">
+    <div class="slds-m-around_medium">
+      <p>Hello, {greeting}!</p>
+      <lightning-input label="Name" value={greeting} onchange={changeHandler}></lightning-input>
+    </div>
+  </lightning-card>
+  <lightning-record-form
+            object-api-name={Contact}>
+            <lightning-card>
+
+<table class="slds-m-around_medium">
+  <tr>
+    <th>First name</th>
+    <th>Last name</th>
+  </tr>
+  <tr>
+    <td>{Contact.name}</td>
+    <td>{Contact.title}</td>
+  </tr>
+</table>
+
+</lightning-card>
+
+
+</template> -->
+
+<template>
+  <lightning-card>
+      <lightning-record-view-form
+          object-api-name={objectApiName}
+          fields={fields}>
+          <lightning-output-field field-name="Name">
+          </lightning-output-field>
+          <lightning-output-field field-name="Email">
+          </lightning-output-field>
+      </lightning-record-view-form>
+  </lightning-card>
+</template>
